@@ -2,8 +2,8 @@
 #1.  Use map() with a lambda to add 5 to every element of the following nested
 # list [[1, 2], [3, 4], [5, 6]]
 
-nested = [[1, 2], [3, 4], [5, 6]]
-result = list(map(lambda x: list(map(lambda y: y + 5, x)), nested))
+n = [[1, 2], [3, 4], [5, 6]]
+result = list(map(lambda x: x.append(5), n))
 print(result)
 
 
@@ -13,7 +13,6 @@ result = dict(filter(lambda item: item[1] > 50, d.items()))
 print(result)
 
 ##3.  Use functools.reduce() with a lambda to find the largest number from a given list Dynamically.
-
 from functools import reduce
 nums = [3, 7, 2, 9, 5]
 largest = reduce(lambda a, b: a if a > b else b, nums)

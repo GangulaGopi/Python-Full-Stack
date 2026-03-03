@@ -28,17 +28,37 @@
 
 
 
-class Building:
-    no_of_rooms =10
-    total_count=0
-    def __init__(self, name, wifi):
-        self.building_name=name
-        self.wifi=wifi
-        Building.total_count+=1
-    def change_rooms(self,nor):
-        Building.no_of_rooms=nor
-b1=Building("New Building",True)
-print(b1.total_count)
-b2=Building("New2 Building",False)
-print(b2.total_count)
+# class Building:
+#     no_of_rooms =10
+#     total_count=0
+#     def __init__(self, name, wifi):
+#         self.building_name=name
+#         self.wifi=wifi
+#         Building.total_count+=1
+#     def change_rooms(self,nor):
+#         Building.no_of_rooms=nor
+# b1=Building("New Building",True)
+# print(b1.total_count)
+# b2=Building("New2 Building",False)
+# print(b2.total_count)
 
+class Bank:
+    Bank_name="CVBank"
+    def __init__(self,name,balance):
+        self.holder=name
+        self.balance=balance
+    @classmethod
+    def change_Bank_name(cls,new):
+        cls.Bank_name=new
+    def deposit(self,amount):
+        self.balance+=amount
+    @staticmethod
+    def validate(amount):
+        return amount>0
+
+b1=Bank("gopi",10000000)
+b1.change_Bank_name("SBI")
+b1.deposit(20000000)
+b2=Bank("mani",20000000)
+print(b1.validate(1000))
+print(b2.validate(20000000))

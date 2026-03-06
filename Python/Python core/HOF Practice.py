@@ -1,9 +1,9 @@
 # # # # # n=[[1, 2], [3, 4], [5, 6]]
 # # # # # m=list(map(lambda x: x.append(5),n))
 # # # # # print(m)
-# # # # # n = [[1, 2], [3, 4], [5, 6]]
-# # # # # result = list(map(lambda x: x+[5], n))
-# # # # # print(result)
+n = [[1, 2], [3, 4], [5, 6]]
+result = list(map(lambda x: x+[5], n))
+print(result)
 # # # #
 # # # # d = {"apple": 100, "banana": 40, "cherry": 150}
 # # # # r=dict(filter(lambda i:i[1]>50,d.items()))
@@ -53,15 +53,15 @@ from functools import reduce
 # r=reduce(lambda a,b:a+b,filter(lambda x:x%5==0,map(lambda x: x**2,s)))
 # print(r)
 
-# a= [1, 2, 3, 4]
-# b = [10, 20, 30, 40]
-# r=list(map(lambda a,b:[a+b]+[a+b],a,b))
-# print(r)
+a= [1, 2, 3, 4]
+b = [10, 20, 30, 40]
+r=list(map(lambda a,b:a+b,a,b))
+print(r)
 
-# a= [1, 2, 3, 4]
-# b = [10, 20, 30, 40]
-# r=list(map(lambda a,b:[a+b],a,b))
-# print(r)
+a= [1, 2, 3, 4]
+b = [10, 20, 30, 40]
+r=list(map(lambda a,b:[a+b],a,b))
+print(r)
 #
 # a= [1, 2, 3, 4]
 # b = [10, 20, 30, 40]

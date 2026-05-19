@@ -121,3 +121,6 @@ print("Total books created:", Book.total_books)
 # print(b1.title, b1.author)   # Python Guido
 # print(b2.title, b2.author)   # Java James
 # print(Book.total_books)      # 2
+
+
+

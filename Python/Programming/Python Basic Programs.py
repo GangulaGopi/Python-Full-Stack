@@ -106,3 +106,38 @@
 #     rev=rev*10+r
 #     n=n//10
 #     print(r,end="")
+#Day 2
+# student grading system
+A=0
+B=0
+C=0
+D=0
+E=0
+F=0
+for i in range(7):
+    n=int(input())
+    if n>90:
+        A+=1
+    elif n>80:
+        B+=1
+    elif n>70:
+        C+=1
+    elif n>60:
+        D+=1
+    elif n>40:
+        E+=1
+    else:
+        F+=1
+maximum=max(A,B,C,D,E,F)
+if maximum==A:
+    print("A")
+elif maximum==B:
+    print("B")
+elif maximum==C:
+    print("C")
+elif maximum==D:
+    print("D")
+elif maximum==E:
+    print("E")
+elif (maximum==F):
+    print("F")

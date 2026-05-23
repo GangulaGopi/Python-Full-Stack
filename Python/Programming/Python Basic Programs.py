@@ -194,3 +194,22 @@
 #         min=r
 #     n=n//10
 # print(min)
+s = input().lower()
+
+v = 0
+c = 0
+
+for ch in s:
+
+    if ord(ch) >= 97 and ord(ch) <= 122:
+
+        if ch in "aeiou":
+
+            v += 1
+
+        else:
+
+            c += 1
+
+print("Vowels =", v)
+print("Consonants =", c)
